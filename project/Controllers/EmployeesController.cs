@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Models;
 using Interfaces;
@@ -21,7 +18,6 @@ namespace aws.Controllers
         [HttpPost("sort/salary/desc")]
         public IList<Employee> SortBySalaryDesc([FromBody]GetRequest request)
         {
-            SetResponseHeaders();
             var employees = _employeeSortUtil.SortBySalaryDesc(request?.Employees);
             return employees;
         }
@@ -29,15 +25,8 @@ namespace aws.Controllers
         [HttpPost("sort/salary/asc")]
         public IList<Employee> SortBySalaryAsc([FromBody]GetRequest request)
         {
-            SetResponseHeaders();
             var employees = _employeeSortUtil.SortBySalaryAsc(request?.Employees);
             return employees;
-        }
-
-        private void SetResponseHeaders() {
-            Response.Headers.Add("Access-Control-Allow-Methods", "POST");
-            Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token");
-            Response.Headers.Add("Access-Control-Allow-Origin", "*");
         }
     }
 }
