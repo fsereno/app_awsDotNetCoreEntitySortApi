@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Models
+namespace FabioSereno.App_awsDotNetCoreEntitySortApi.Models
 {
     public class Employee : IComparable<Employee>
     {

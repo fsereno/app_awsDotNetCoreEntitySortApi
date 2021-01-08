@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using Models;
-using Interfaces;
+using FabioSereno.App_awsDotNetCoreEntitySortApi.Models;
+using FabioSereno.App_awsDotNetCoreEntitySortApi.Interfaces;
 
-namespace aws.Controllers
+namespace FabioSereno.App_awsDotNetCoreEntitySortApi.Controllers
 {
     [Route("api/[controller]")]
     public class EmployeesController : ControllerBase

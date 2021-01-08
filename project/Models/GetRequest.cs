@@ -1,7 +1,6 @@
 using System.Collections.Generic;
-using Models;
 
-namespace Models
+namespace FabioSereno.App_awsDotNetCoreEntitySortApi.Models
 {
     public class GetRequest
     {

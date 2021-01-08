@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Models;
+using FabioSereno.App_awsDotNetCoreEntitySortApi.Models;
 
-namespace Interfaces
+namespace FabioSereno.App_awsDotNetCoreEntitySortApi.Interfaces
 {
     public interface IEmployeeSortUtil
     {

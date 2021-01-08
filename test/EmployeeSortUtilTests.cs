@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
 using Moq;
 using Xunit;
-using Utils;
-using Models;
-using Interfaces;
+using FabioSereno.App_awsDotNetCoreEntitySortApi.Utils;
+using FabioSereno.App_awsDotNetCoreEntitySortApi.Models;
+using FabioSereno.App_awsDotNetCoreEntitySortApi.Interfaces;
 
-namespace aws.Tests
+namespace FabioSereno.App_awsDotNetCoreEntitySortApi.Tests
 {
     public class EmployeeSortUtilTests
     {

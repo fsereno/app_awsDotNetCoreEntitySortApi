@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
-using Interfaces;
-using Models;
+using FabioSereno.App_awsDotNetCoreEntitySortApi.Interfaces;
+using FabioSereno.App_awsDotNetCoreEntitySortApi.Models;
 
-namespace Utils
+namespace FabioSereno.App_awsDotNetCoreEntitySortApi.Utils
 {
     public class EmployeeSortUtil : IEmployeeSortUtil
     {
